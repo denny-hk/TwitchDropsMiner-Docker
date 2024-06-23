@@ -22,6 +22,9 @@ RUN apt-get update && apt-get install -y \
 # Export the display
 ENV DISPLAY=:0
 
+# Set the default VNC password
+ENV VNC_PASSWORD="default_password"
+
 # Set the working directory
 WORKDIR /app
 
